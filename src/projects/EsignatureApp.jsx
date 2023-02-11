@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import React from 'react';
 import Title from './components/Title';
 
@@ -9,10 +10,24 @@ export default function EsignatureApp() {
 		padding: '.035rem 0',
 	};
 
+	const [name, setName] = useState('Piotr');
+	const [date, setDate] = useState('01.01.2023');
+
+	const handleNameChange = (e) => {
+		// console.log(e.target.value);
+		setName(e.target.value);
+	};
+
+	const handleDateChange = (e) => {
+		// console.log(e.target.value);
+		setDate(e.target.value);
+	};
+
 	return (
 		<div className='container text-center'>
-			<Title classes={'title'} text={'Piotr'} />
-			<Title classes={'subtitle mb-4'} text={'Date'} />
+			{/* <Title classes={'title'} text={'Piotr'} /> */}
+			<Title classes={'title'} text={name} />
+			<Title classes={'subtitle mb-4'} text={!date ? 'DoB' : date} />
 			<p>
 				Lorem Ipsum is simply dummy text of the printing and typesetting
 				industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -33,8 +48,18 @@ export default function EsignatureApp() {
 					top: '40vh',
 				}}
 			>
-				<input type='date' value={''} style={inputStyle}></input>
-				<input type='text' value={''} style={inputStyle}></input>
+				<input
+					type='date'
+					value={date}
+					style={inputStyle}
+					onChange={handleDateChange}
+				></input>
+				<input
+					type='text'
+					value={name}
+					style={inputStyle}
+					onChange={handleNameChange}
+				></input>
 			</footer>
 		</div>
 	);
