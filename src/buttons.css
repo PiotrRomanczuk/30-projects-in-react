@@ -1,7 +1,34 @@
 
-/* 
-<!-- HTML !-->
-<button class="button-1" role="button">Button 1</button> */
+/* Colors */
+:root {
+  --green: #38FF4D;
+  --blue: ##12ACFF;
+  --yellow: #FFFB00;
+  --purple: #8700FF;
+  --red: #FF0000;
+}
+
+
+.btn-green {
+  background-color: var(--green) !important;
+}
+
+.btn-blue {
+  background-color: var(--blue) !important;
+}
+
+.btn-yellow {
+  background-color: var(--yellow) !important;
+}
+
+.btn-purple { 
+  background-color: var(--purple) !important;
+}
+
+.btn-red {
+  background-color: var(--red) !important;
+}
+
 
 /* CSS */
 .button-1 {
@@ -18,7 +45,7 @@
   height: 40px;
   line-height: 20px;
   list-style: none;
-  margin: 0;
+  margin: 1rem;
   outline: none;
   padding: 10px 16px;
   position: relative;
