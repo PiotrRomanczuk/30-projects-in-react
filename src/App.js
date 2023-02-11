@@ -1,10 +1,13 @@
 import './App.css';
-import EsignatureApp from './projects/EsignatureApp';
+import './buttons.css';
+import RandomizeColors from './projects/02-randomizeColors/RandomizeColors';
+// import EsignatureApp from './projects/EsignatureApp';
 
 function App() {
 	return (
 		<div className='App'>
-			<EsignatureApp />
+			{/* <EsignatureApp /> */}
+			<RandomizeColors />
 		</div>
 	);
 }
