@@ -1,0 +1,38 @@
+/* Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@300;400;500;600;700&display=swap');
+
+
+.App {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  font-family: 'Rokkitt', serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
+/* Title and subtitle */
+
+.title {
+  font-size: 3.75rem;
+  font-weight: 500;
+  margin: 3rem 0;
+}
+
+.title-main {
+  font-size: 5rem;
+  font-weight: 600;
+  margin: 4rem 0;
+}
+
+.subtitle {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin: 5rem 0;
+}
