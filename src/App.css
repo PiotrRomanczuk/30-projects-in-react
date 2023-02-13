@@ -17,15 +17,61 @@
 }
 
 
+
+
+
+/* Card */
+
+.card {
+
+  --bg-filter-opacity: 0.5;
+  background-image: linear-gradient(rgba(0,0,0,var(--bg-filter-opacity)),rgba(0,0,0,var(--bg-filter-opacity))), var(--bg-img);
+  height: 10em;
+  width: 15em;
+  font-size: 1.5em;
+  color: white;
+  border-radius: 1em;
+  padding: 1em;
+  /* margin: 2em; */
+  display: flex;
+  align-items: flex-end;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 5em -1em black;
+  position: relative;
+  overflow: hidden;
+  border: 0.2rem solid #ccc;
+  text-decoration: none;
+}
+
+.card-dark {}
+
+.card-header {}
+
+.card-footer {}
+
+/* Others - not classified yet */
+
 .container {
   /* display:flex;
   flex-direction: column; */
-  margin: 2rem
+  margin: 1rem
 }
+
+
 
 .btn {
   margin: 1rem
 }
+
+.d-flex {
+  display: flex
+}
+
+.fs-xl {
+  font-size: x-large;
+}
+
 
 
 /* Title and subtitle */
