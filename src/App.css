@@ -17,6 +17,17 @@
 }
 
 
+.container {
+  /* display:flex;
+  flex-direction: column; */
+  margin: 2rem
+}
+
+.btn {
+  margin: 1rem
+}
+
+
 /* Title and subtitle */
 
 .title {
