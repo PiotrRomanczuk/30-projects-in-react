@@ -1,6 +1,6 @@
 import React from 'react';
 import Title from '../components/Title';
-import { IconName } from 'react-icons/fa';
+import { AiFillSmile } from 'react-icons/ai';
 
 export default function LikePhotoApp() {
 	return (
@@ -9,10 +9,15 @@ export default function LikePhotoApp() {
 			<Title text={'likes'} classes={'subtitle'} />
 
 			<div
-				className='card card-dark m-auto'
-				style={{ width: 300, cursor: 'pointer' }}
+				className='card card-dark'
+				style={
+					{
+						// cursor: 'pointer'
+					}
+				}
 			>
 				<div className='card-header fs-xl'>
+					<AiFillSmile className='mr-2' />
 					<small>DogyDog</small>
 				</div>
 				<img src='' alt='' style={{ height: 'fit-content' }}></img>
