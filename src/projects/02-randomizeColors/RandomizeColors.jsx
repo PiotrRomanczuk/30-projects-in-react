@@ -3,6 +3,8 @@ import Title from '../components/Title';
 // import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+let body = document.querySelector('body');
+
 export default function RandomizeColors() {
 	function getRandomColor() {
 		let letters = '0123456789ABCDEF';
@@ -20,16 +22,16 @@ export default function RandomizeColors() {
 		console.log(e.target.id);
 		console.log(getRandomColor());
 
-		let body = document.querySelector('body');
-
-		console.log(body.style.backgroundColor);
+		console.log(body.style);
 
 		body.style.backgroundColor = getRandomColor;
+		console.log(body.style.backgroundColor);
+		// console.log(React.DOM.body.style.backgroundColor);
 	}
 
 	return (
 		<div className='container gap-4' onClick={handleClick}>
-			<Title text={'Randomize Colors'} classes={'mb-4'} />
+			<Title text={'Randomize Colors'} classes={'mb-4 subtitle'} />
 
 			<button type='button' className='btn btn-primary' id='1'>
 				Click me!
